@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            width: 400px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>DOM Manipulation in JavaScript</h1>
+
+    <div class="container">
+        <p id="text1">This text is selected using getElementById()</p>
+        <p class="text2">This text is selected using querySelector()</p>
+        <div id="output"></div>
+
+        <button onclick="changeById()">Change by ID</button>
+        <button onclick="changeByQuery()">Change by Query Selector</button>
+    </div>
+
+    <script>
+        function changeById() {
+            
+            const element = document.getElementById("text1");
+            element.textContent = "Text changed using getElementById()!";
+            element.style.color = "green";
+        }
+
+        function changeByQuery() {
+            
+            const element = document.querySelector(".text2");
+            element.textContent = "Text changed using querySelector()!";
+            element.style.color = "red";
+
+        
+            document.getElementById("output").innerHTML =
+                "<p style='color: blue;'>Query Selector Button Clicked!</p>";
+        }
+    </script>
+
+</body>
+</html>
