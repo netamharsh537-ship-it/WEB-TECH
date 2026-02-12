@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Conditional & Looping Statements</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .box {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Conditional Statements & Loops</h1>
+
+    <div class="box" id="output"></div>
+
+    <script>
+        
+
+        let output = document.getElementById("output");
+
+       
+        let age = 20;
+        if (age >= 18) {
+            output.innerHTML += "<p>You are eligible to vote.</p>";
+        }
+
+        
+        let number = 7;
+        if (number % 2 === 0) {
+            output.innerHTML += "<p>The number is even.</p>";
+        } else {
+            output.innerHTML += "<p>The number is odd.</p>";
+        }
+
+        
+        let marks = 85;
+        if (marks >= 90) {
+            output.innerHTML += "<p>Grade: A+</p>";
+        } else if (marks >= 75) {
+            output.innerHTML += "<p>Grade: A</p>";
+        } else if (marks >= 60) {
+            output.innerHTML += "<p>Grade: B</p>";
+        } else {
+            output.innerHTML += "<p>Grade: C</p>";
+        }
+
+        
+        let day = 3;
+        switch (day) {
+            case 1:
+                output.innerHTML += "<p>Monday</p>";
+                break;
+            case 2:
+                output.innerHTML += "<p>Tuesday</p>";
+                break;
+            case 3:
+                output.innerHTML += "<p>Wednesday</p>";
+                break;
+            case 4:
+                output.innerHTML += "<p>Thursday</p>";
+                break;
+            case 5:
+                output.innerHTML += "<p>Friday</p>";
+                break;
+            default:
+                output.innerHTML += "<p>Invalid Day</p>";
+        }
+
+        
+        
+        output.innerHTML += "<h3>For Loop Output:</h3>";
+        for (let i = 1; i <= 5; i++) {
+            output.innerHTML += "Number: " + i + "<br>";
+        }
+
+       
+        output.innerHTML += "<h3>While Loop Output:</h3>";
+        let j = 1;
+        while (j <= 5) {
+            output.innerHTML += "Count: " + j + "<br>";
+            j++;
+        }
+
+        
+        output.innerHTML += "<h3>Do While Loop Output:</h3>";
+        let k = 1;
+        do {
+            output.innerHTML += "Value: " + k + "<br>";
+            k++;
+        } while (k <= 5);
+
+    </script>
+
+</body>
+</html>

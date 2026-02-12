@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #0078ff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 25%;
+            background: #f0f0f0;
+            padding: 15px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+            background: #ffffff;
+        }
+        .float-box {
+            width: 120px;
+            height: 120px;
+            background: pink;
+            float: right;
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                text-align: center;
+            }
+
+            .float-box {
+                float: none;
+                margin: 0 auto 10px;
+            }
+        }
+        @media (min-width: 600px) and (max-width: 900px) {
+            .container {
+                display: flex;
+            }
+
+            .sidebar {
+                width: 30%;
+            }
+
+            .content {
+                width: 70%;
+            }
+        }
+        @media (min-width: 900px) {
+            .container {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>Responsive Layout Demo</header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Links</p>
+            <p>Menu</p>
+            <p>Settings</p>
+        </div>
+        <div class="content">
+            <h2>Content Area</h2>
+            <div class="float-box"></div>
+            <p>
+                This content shows how float + clear works.  
+                The pink box floats to the right on large screens.
+            </p>
+            <div class="clear"></div>
+            <p>
+                After clearing the float, this text begins below the floating box.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

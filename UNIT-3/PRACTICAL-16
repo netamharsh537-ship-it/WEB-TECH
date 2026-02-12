@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation using JavaScript Events</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 350px;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Form Validation using JavaScript</h1>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label>
+        <input type="text" id="name" oninput="checkName()">
+
+        <label>Email:</label>
+        <input type="text" id="email" oninput="checkEmail()">
+
+        <label>Password:</label>
+        <input type="password" id="password" oninput="checkPassword()">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function checkName() {
+            let name = document.getElementById("name").value;
+            if (name.length < 3) {
+                alert("Name must be at least 3 characters long");
+            }
+        }
+
+        function checkEmail() {
+            let email = document.getElementById("email").value;
+            if (!email.includes("@")) {
+                alert("Please enter a valid email address");
+            }
+        }
+
+        function checkPassword() {
+            let password = document.getElementById("password").value;
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+            }
+        }
+
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            if (name === "") {
+                alert("Name cannot be empty");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Email cannot be empty");
+                return false;
+            }
+
+            if (password === "") {
+                alert("Password cannot be empty");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>

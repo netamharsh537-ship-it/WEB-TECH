@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Defined Functions and Scope in JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .box {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Defined Functions & Variable Scope</h1>
+
+    <div class="box" id="output"></div>
+
+    <script>
+        function displayMessage() {
+            return "Hello! This is a user defined function.";
+        }
+
+        function addNumbers(a, b) {
+            return a + b;
+        }
+
+        function checkEvenOdd(num) {
+            if (num % 2 === 0) {
+                return num + " is Even";
+            } else {
+                return num + " is Odd";
+            }
+        }
+
+        let output = document.getElementById("output");
+
+        output.innerHTML += "<p>" + displayMessage() + "</p>";
+        output.innerHTML += "<p>Sum of 10 and 20 is: " + addNumbers(10, 20) + "</p>";
+        output.innerHTML += "<p>" + checkEvenOdd(7) + "</p>";
+
+        var globalVar = "I am a global variable using var";
+
+        function scopeTest() {
+            var functionVar = "I am function scoped variable using var";
+            let blockLet = "I am block scoped variable using let";
+            const blockConst = "I am block scoped variable using const";
+
+            output.innerHTML += "<p>" + globalVar + "</p>";
+            output.innerHTML += "<p>" + functionVar + "</p>";
+            output.innerHTML += "<p>" + blockLet + "</p>";
+            output.innerHTML += "<p>" + blockConst + "</p>";
+
+            if (true) {
+                var testVar = "var inside block";
+                let testLet = "let inside block";
+                const testConst = "const inside block";
+
+                output.innerHTML += "<p>" + testVar + "</p>";
+                output.innerHTML += "<p>" + testLet + "</p>";
+                output.innerHTML += "<p>" + testConst + "</p>";
+            }
+
+            output.innerHTML += "<p>" + testVar + "</p>";
+        }
+
+        scopeTest();
+
+        const PI = 3.14;
+        output.innerHTML += "<p>Value of PI: " + PI + "</p>";
+    </script>
+
+</body>
+</html>
