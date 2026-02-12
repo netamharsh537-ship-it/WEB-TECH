@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+  .intro {
+    text-align: center;
+    margin: 2rem 0;
+    }
+
+    .box {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .box {
+      width: 90%;
+      margin: auto;
+    }
+
+    @media (min-width: 600px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .box {
+        width: 45%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .box {
+        width: 30%;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Web Page</h1>
+  </header>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>
+        This is a simple responsive web page using mobile-first design,
+        flexible units, and media queries.
+      </p>
+    </section>
+  <main>
+    <div class="container">
+      <div class="box">Box 1 - Laptops</div>
+      <div class="box">Box 2 - Mobiles</div>
+      <div class="box">Box 3 - Desktop</div>
+    </div>
+  </main>
+</body>
+</html>

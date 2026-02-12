@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+
+  <style>
+    * {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #main-title {
+      color: darkblue;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    .box p {
+      color: green;
+      font-style: italic;
+    }
+
+    h1, footer {
+      background-color: lightgray;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="main-title">Welcome to CSS Selectors Demo</h1>
+
+  <div class="container">
+    <p>This is a paragraph inside the container.</p>
+    <p class="highlight">i need more practice for my typing speed(highlight tag).</p>
+
+    <div class="box">
+      <p>This is a paragraph was witten inside a <strong>descendant selector</strong> as a example of the selector.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Footer content here.</p>
+  </footer>
+</body>
+</html>

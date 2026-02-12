@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Hub - Learn Effectively</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f7f9fc;
+    }
+
+    header, nav, main, aside, footer {
+      padding: 20px;
+      margin: 10px;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;}
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    article {
+      flex: 3;
+      background: #ffffff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    aside {
+      flex: 1;
+      background: #e8f0fe;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      border-top: 4px solid #4a90e2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Learning tips</h1>
+    <p>Your guide to effective learning and productive study habits</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#articles">Study Tips</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="articles">
+      <h2>How to Study Effectively</h2>
+      
+      <section>
+        <h3>1. Set Clear Goals</h3>
+        <p>Before you start studying, define what you want to achieve. Whether it’s mastering a topic or completing an assignment, setting goals helps you stay focused and motivated.</p>
+      </section>
+
+      <section>
+        <h3>2. Create a Study Schedule</h3>
+        <p>Plan your study sessions in advance. Break down large topics into smaller, manageable chunks and allocate time for each subject to maintain balance.</p>
+      </section>
+
+      <section>
+        <h3>3. Use Active Learning Techniques</h3>
+        <p>Engage with your study material—summarize what you read, quiz yourself, or explain concepts to someone else. Active learning improves understanding and memory retention.</p>
+      </section>
+
+      <section>
+        <h3>4. Take Breaks</h3>
+        <p>Use the Pomodoro technique: study for 25 minutes, then take a 5-minute break. Short breaks prevent burnout and keep your brain fresh.</p>
+      </section>
+
+      <section>
+        <h3>5. Review Regularly</h3>
+        <p>Consistent review helps move information from short-term to long-term memory. Revisit key notes and concepts weekly.</p>
+      </section>
+    </article>
+
+    <aside>
+      <h3>Helpful Study Resources</h3>
+      <ul>
+        <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+        <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+        <li><a href="https://quizlet.com" target="_blank">Quizlet</a></li>
+        <li><a href="https://www.edx.org" target="_blank">edX</a></li>
+      </ul>
+
+      <h3>Quick Tips</h3>
+      <p> Study in a quiet place.</p>
+      <p> Stay organized with notes.</p>
+      <p> Stay hydrated and sleep well.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p> 2025 HARSH NETAM</p>
+  </footer>
+
+</body>
+</html>

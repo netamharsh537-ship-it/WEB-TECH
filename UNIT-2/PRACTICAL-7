@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Styling Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <h1>Welcome to My Styled Web Page</h1>
+    <p>Using the power of the CSS Box Model</p>
+  </header>
+
+  <section class="content">
+    <article class="card">
+      <h2>Box Model Magic</h2>
+      <p>The box model allows you to control layout, spacing, and sizing precisely.</p>
+    </article>
+
+    <article class="card">
+      <h2>Padding & Margins</h2>
+      <p>Padding gives breathing room inside elements, while margins space them apart.</p>
+    </article>
+
+    <article class="card">
+      <h2>Beautiful Borders</h2>
+      <p>Borders can add depth and visual structure to your layout.</p>
+    </article>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Styled Web Page by HARSH NETAM</p>
+  </footer>
+</body>
+</html>
