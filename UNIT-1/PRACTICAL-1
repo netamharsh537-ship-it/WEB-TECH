@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Webpage</title>
+</head>
+<body>
+
+    <h1>This is My Webpage</h1>
+    <h2>About This Page</h2>
+    <p>
+        This is my practical assignment which is created using basic html tags like 
+        <b>headings</b>, <i>paragraphs</i>
+        <u>text formatting</u> tags.
+    </p>
+
+    <h3>Text Formatting Examples</h3>
+    <p>
+        You can make text <b>bold</b>, <i>italic</i>, or <u>underlined</u> by using b, i or u tags.
+    </p>
+    <p>
+        Use <strong>strong</strong> to highlight important text and 
+        <em>emphasis</em> for emphasized words.
+    </p>
+    <p>
+        You can also <mark>highlight text</mark> using the mark tag.
+    </p>
+
+    <h4>Conclusion</h4>
+    <p>
+        HTML provides various tags to make your text 
+        <b>clear</b>, <i>stylish</i>, and <u>well-organized</u>. Also we have sub tag to write chemical formula like 
+        H<sub>2</sub>O and sup tag to write powers in maths like X<sup>3</sup>.</p>
+        <hr>
+        <p>Created by <b>HARSH NETAM</b>.</p>
+</body>
+</html>
